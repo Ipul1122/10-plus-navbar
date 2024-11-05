@@ -1,0 +1,19 @@
+hi guys
+
+this navbar menu have 5 menu navigation
+Home
+About
+Services
+Testimoni
+Contact
+
+U can change whatever u want
+
+this responsive navbar have effect, its glass effect. 
+When nav just scroll down or bottom will have glass effect and if you scroll up or top it will gone
+
+And this navbar when you scroll down or bottom, body page it will blur at navbar
+
+Hope you guys like my nav-3. If dont try 2 or 1 nav
+
+See you next until 10+ I made ;)
