@@ -7,7 +7,15 @@ home
 about
 contact
 
-so what's intesting? this nav have dark&light toggle and also have searching items
+so what's intresting? this nav have dark&light toggle and also have searching items
 when you search item, it will only what its item show
+
+let = product
+if (product){
+  show = true
+} else {
+  noShow = false 
+}
+
 
 its only using html,css and js
