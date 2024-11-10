@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    margin-left: 10rem;
 }
 
 .menu ul {
@@ -51,6 +52,18 @@ body {
 .search-dark-light input {
     padding: 5px;
     margin-right: 10px;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+#themeToggle:hover{
+    opacity: 0.8;
 }
 
 .hamburger {
@@ -110,18 +123,18 @@ body {
     }
 }
 
-/* Tambahan untuk mode gelap */
+
 .dark-theme {
-    background-color: #333; /* Warna latar belakang gelap */
-    color: white; /* Warna teks terang untuk body */
+    background-color: #333; 
+    color: white; 
 }
 
 .dark-theme nav {
-    background-color: #444; /* Warna navbar gelap */
+    background-color: #444;
 }
 
 .dark-theme .menu ul li a {
-    color: white; /* Warna teks untuk menu saat dalam mode gelap */
+    color: white; 
 }
 
 .dark-theme .search-dark-light input {
@@ -130,20 +143,26 @@ body {
 }
 
 .dark-theme .search-dark-light input::placeholder {
-    color: #ccc; 
+    color: #ccc; /* Warna placeholder di mode gelap */
+}
+
+.dark-theme .hamburger{
+    color: white;
 }
 
 .dark-theme #theme-toggle {
-    color: white; 
+    color: white; /* Warna teks tombol toggle di mode gelap */
 }
 
 .card h2, .card p {
     color: #333; 
 }
 
+/* Tambahan untuk mode gelap */
 .dark-theme .card h2, .dark-theme .card p {
-    color: black; 
+    color: black; /* Warna teks putih dalam mode gelap */
 }
+
 
 /* CARD PRODUCT */
 
