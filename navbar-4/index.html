@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-dark-light">
+            <input type="text" id="searchInput" placeholder="Cari produk...">
+            <button id="theme-toggle">🌙</button>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- product -->
+    <div class="container">
+        <h1>Produk Buah</h1>
+        <div class="grid" id="productGrid">
+            <div class="card" data-name="apel">
+                <img src="https://via.placeholder.com/150" alt="Apel">
+                <h2>Apel</h2>
+                <p>Buah apel segar dan renyah.</p>
+                <button>Beli</button>
+            </div>
+            <div class="card" data-name="pisang">
+                <img src="https://via.placeholder.com/150" alt="Apel">
+                <h2>Pisang</h2>
+                <p>Buah pisan segar dan renyah.</p>
+                <button>Beli</button>
+            </div>
+            <div class="card" data-name="melon">
+                <img src="https://via.placeholder.com/150" alt="Apel">
+                <h2>Melon</h2>
+                <p>Buah melon segar dan renyah.</p>
+                <button>Beli</button>
+            </div>
+            <div class="card" data-name="srikaya">
+                <img src="https://via.placeholder.com/150" alt="Apel">
+                <h2>Srikaya</h2>
+                <p>Buah srikaya segar dan renyah.</p>
+                <button>Beli</button>
+            </div>
+            <div class="card" data-name="semangka">
+                <img src="https://via.placeholder.com/150" alt="Semangka">
+                <h2>Semangka</h2>
+                <p>Semangka manis dan menyegarkan.</p>
+                <button>Beli</button>
+            </div>
+            <div class="card" data-name="jeruk">
+                <img src="https://via.placeholder.com/150" alt="Jeruk">
+                <h2>Jeruk</h2>
+                <p>Jeruk segar yang kaya vitamin C.</p>
+                <button>Beli</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
