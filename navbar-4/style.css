@@ -130,13 +130,20 @@ body {
 }
 
 .dark-theme .search-dark-light input::placeholder {
-    color: #ccc; /* Warna placeholder di mode gelap */
+    color: #ccc; 
 }
 
 .dark-theme #theme-toggle {
-    color: white; /* Warna teks tombol toggle di mode gelap */
+    color: white; 
 }
 
+.card h2, .card p {
+    color: #333; 
+}
+
+.dark-theme .card h2, .dark-theme .card p {
+    color: black; 
+}
 
 /* CARD PRODUCT */
 
