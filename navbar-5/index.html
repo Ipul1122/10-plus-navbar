@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Dark Mode and Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MISOPU</div>
+      <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="navbar-right">
+        <div class="time" id="time"></div>
+        <button id="toggle-mode" class="toggle-mode" onclick="toggleDarkMode()">☀️</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+      </div>
+    </nav>
+
+   <!-- CARD ADZAN -->
+<div class="prayer-times-container">
+    <div class="prayer-card" id="subuh">Subuh - 04:20</div>
+    <div class="prayer-card" id="dzuhur">Dzuhur - 11:40</div>
+    <div class="prayer-card" id="ashar">Ashar - 15:00</div>
+    <div class="prayer-card" id="maghrib">Maghrib - 17:50</div>
+    <div class="prayer-card" id="isya">Isya - 18:50</div>
+  </div>
+  
+  <!-- Notifikasi Adzan -->
+  <div id="adhan-notification" class="adhan-notification">
+    <span id="adhan-time-text"></span>
+    <div>
+      <button id="play-adhan-btn">Dengarkan Adzan</button>
+      <button id="close-adhan-btn">Tutup</button>
+    </div>
+  </div>
+  
+  <!-- Audio -->
+  <audio id="adhan-sound" src="audio/adzan.mp3" preload="auto" muted></audio>
+  
+
+
+      <script src="script.js"></script>
+  </body>
+</html>

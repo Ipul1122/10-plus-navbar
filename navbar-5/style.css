@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Time and Dark Mode Button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.time {
+  font-size: 1rem;
+}
+
+.toggle-mode {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      position: relative;
+      z-index: 10; 
+    }
+    
+    /* Menu Overlay with Glass Effect */
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: fixed; 
+      margin-top: 39rem; 
+      right: 0;
+      width: 30%;
+      height: calc(100vh - 70px); 
+      background: rgba(240, 221, 51, 0.2); 
+      backdrop-filter: blur(15px); 
+      padding: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+      border: 2px solid rgba(255, 255, 255, 0.3); 
+      border-radius: 10px; 
+      z-index: 5; 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+      align-items: center;
+      color: orange;
+    }
+
+    body.dark-mode .menu {
+        background-color: #fff;
+      }
+    
+    /* Tampilkan menu overlay saat aktif */
+    .menu.active {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Hamburger button */
+    .hamburger {
+      display: block;
+    }
+  }
+  
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #fff;
+}
+
+body.dark-mode .menu a {
+  color: #333;
+}
+
+body.dark-mode .logo {
+  color: #333;
+}
+
+body.dark-mode .hamburger {
+  color: #333;
+}
+
+body.dark-mode .toggle-mode {
+    color: #333;
+  }
+  
+
+body.dark-mode .time {
+  color: #333;
+}
+
+
+
+
+
+
+
+/* CARD ADZAN */
+.prayer-times-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 2rem; 
+    padding: 2rem;
+  }
+  
+  .prayer-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prayer-card:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efek hover */
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .prayer-times-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  /* Notifikasi Adzan */
+  .adhan-notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .adhan-notification button {
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .adhan-notification button:hover {
+    background-color: #45a049;
+  }
+  
+  .adhan-notification button#close-adhan-btn {
+    background-color: #f44336;
+  }
+  
+  .adhan-notification button#close-adhan-btn:hover {
+    background-color: #e53935;
+  }
+  
